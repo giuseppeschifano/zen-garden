@@ -1,0 +1,264 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+
+ /* Google fonts*/
+ 
+ @import url('https://fonts.googleapis.com/css?family=Six+Caps');
+
+ @import url("https://fonts.googleapis.com/css?family=Julius+Sans+One");
+
+ @import url("https://fonts.googleapis.com/css?family=Raleway");
+
+/* settings*/
+
+/* font-size: 30px;
+	margin: 0;
+	font-weight: 300;
+	font-family: 'Six Caps'; */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+	display: flex;
+	justify-content: center;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	line-height: 1.88889;
+	color: #555753; 
+	min-width: 600px;
+	width: 100%;
+	margin: 0; 
+	padding: 0;
+	margin-left: 5em;
+	background-color: rgb(211, 245, 61);
+	}
+p { 
+	margin: 0 40px; 
+	text-align: justify;
+	}
+h3 { 
+	font: 1.4em 'Julius Sans One', sans-serif;
+	font-weight: bold;
+	letter-spacing: 1px; 
+	margin: 50px 0 10px 70px;
+	/* margin-bottom: 10px;  */
+	color: white;
+	/* color: #7D775C; */
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #9685BA;
+	/* color: #B7A5DF; */
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #D4CDDC;
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #B7A5DF;
+	/* color: #9685BA; */
+	border-bottom: solid;
+	}
+abbr {
+	border-bottom: none;
+	}
+
+
+/* specific divs */
+.page-wrapper { 
+	padding: 0 300px 0 150px;  
+	margin: 0; 
+	position: relative;
+	}
+
+.intro { 
+	background-color: whitesmoke;
+	width: 900px;
+	padding: 10px 10px 0 0px;
+	}
+
+.explanation, .benefits { 
+	background-color: rgb(88, 130, 143);
+	width: 900px;
+	padding: 10px 10px 0 0px;
+	/* width: 100%; */
+	}
+
+header h1 { 
+	background: transparent url('images/hoofdtitel.JPG') no-repeat top center;
+	margin-top: 10px;
+	display: block;
+	width: 100%;
+	height: 87px;
+	float: left;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+header h2 { 
+	background: transparent url('images/subtitel.JPG') no-repeat top center; 
+	margin-top: 58px; 
+	margin-bottom: 40px; 
+	width: 100%; 
+	height: 100%; 
+	float: right;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+header {
+	padding-top: 20px;
+	height: 87px;
+}
+
+.summary {
+	clear: both; 
+	margin: 200px 20px 20px 10px;
+	padding: 10px 10px 0 0px; 
+	/* width: 160px;  */
+	/* float: left; */
+	}
+.summary p {
+	font: italic 1.1em; 
+	/* text-align: center; */
+	}
+
+.preamble, .participation, .requirements {
+	background: rgb(180,214,237);
+	background: linear-gradient(0deg, rgba(180,214,237,1) 19%, rgba(174,175,176,0.9136029411764706) 100%);
+	width: 900px;
+	padding: 10px 10px 0px 0px;
+	/* margin: 20px 0px 20px 0px;  */
+	}
+
+.main.supporting {	
+	/* padding-left: 10px;  */
+	/* margin-bottom: 40px; */
+	padding: 10px 10px 0 0px;
+	}
+
+footer { 
+	text-align: center;
+	font-size: 26px; 
+	margin-top: 40px;
+	}
+footer a:link, footer a:visited { 
+	margin-right: 20px; 
+	}
+
+
+.sidebar {
+	display: flex;
+	/* background-color: white; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+	justify-content: space-between;
+	/* margin-left: 500px; */
+	width: 340px; 
+	/* position: absolute;  */
+	/* top: 0;  */
+	/* right: 0; */
+	}
+
+.sidebar .wrapper {
+	display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+	font: 12px Julius Sans One; 
+	font-weight: bold;
+	/* background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top center repeat;  */
+	padding: 10px; 
+	margin-top: 10px; 
+	width: 340px;
+	}
+
+.sidebar h3.select { 
+	display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+	background: url('images/viewdesigns.JPG') no-repeat top left; 
+	background-color: lightslategray;
+	margin: 10px 0 5px 0;  
+	height: 50px;
+	width: 310px; 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+
+	}
+.sidebar h3.archives { 
+	display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+	background: transparent url('images/archives.JPG') no-repeat top left; 
+	background-color: lightslategray;
+	margin: 10px 0 5px 0; 
+	width: 300px;  
+	height: 50px; 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+.sidebar h3.resources { 
+	display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+	background: transparent url('images/resources.JPG') no-repeat top left; 
+	background-color: lightslategray;
+	margin: 10px 0 5px 0;  
+	width: 300px; 
+	height: 50px; 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	}
+.sidebar li {
+	line-height: 2em; 
+	background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top; 
+	display: block; 
+	padding-top: 5px; 
+	margin-bottom: 5px;
+	list-style-type: none;
+	}
+.sidebar li a:link {
+	color: #988F5E;
+	}
+.sidebar li a:visited {
+	color: #B3AE94;
+	}
+
+
+.extra1 {
+	/* background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat;  */
+	position: absolute; 
+	top: 40px; 
+	right: 0; 
+	width: 148px; 
+	height: 110px;
+	}
